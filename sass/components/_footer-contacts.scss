@@ -12,9 +12,9 @@
   &:hover {
     color: $text-color-logo;
   }
-}
-.adress__link--color {
-  color: $text-color-white;
+  &--color {
+    color: $text-color-white;
+  }
 }
 
 .adress__item:not(:last-child) {

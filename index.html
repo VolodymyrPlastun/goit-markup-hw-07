@@ -24,7 +24,7 @@
   <body>
     <!-- header -->
     <header class="page-header">
-      <div class="container main-nav">
+      <div class="container container--flex">
         <a class="logo" href="./index.html">Web<span class="logo__header">Studio</span></a>
         <nav class="site-nav">
           <ul class="site-nav__list">
@@ -68,10 +68,10 @@
       <!-- Наши преимущества -->
       <section class="section">
         <div class="container">
-          <h2 class="section__title visually-hidden">Наши преимущества</h2>
+          <h2 class="section__title section__title--visually-hidden">Наши преимущества</h2>
           <ul class="features">
             <li class="features__item">
-              <div class="features__icons">
+              <div class="features__box">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
@@ -82,7 +82,7 @@
               </p>
             </li>
             <li class="features__item">
-              <div class="features__icons">
+              <div class="features__box">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
@@ -93,7 +93,7 @@
               </p>
             </li>
             <li class="features__item">
-              <div class="features__icons">
+              <div class="features__box">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
@@ -104,7 +104,7 @@
               </p>
             </li>
             <li class="features__item">
-              <div class="features__icons">
+              <div class="features__box">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
@@ -479,13 +479,17 @@
           </label>
 
           <label class="modal__checkbox">
-            <input type="checkbox" name="checkbox" class="modal__checkbox-input visually-hidden" />
+            <input
+              type="checkbox"
+              name="checkbox"
+              class="modal__checkbox-input modal__checkbox-input--visually-hidden"
+            />
             <span class="modal__icon-empty">
               <svg class="modal__icon-ckeck" width="16" height="15">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </span>
-            Соглашаюсь с рассылкой и принимаю
+            Соглашаюсь с рассылкой и принимаю &NonBreakingSpace;
             <a class="modal__link" href="#">Условия договора</a>
           </label>
 

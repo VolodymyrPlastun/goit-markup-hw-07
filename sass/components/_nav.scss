@@ -7,10 +7,11 @@
 
   padding-top: 32px;
   padding-bottom: 32px;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
-}
+
 .site-nav__link {
   &:hover,
   &:focus {
@@ -23,10 +24,15 @@
   letter-spacing: 0.02em;
   color: $text-color-sec;
   transition: color $transition-duration $timing-function;
+  &:hover,
+  &:focus {
+    color: $text-color-logo;
+  }
+  &--current {
+    color: $text-color-logo;
+  }
 }
-.site-nav__link--current {
-  color: $text-color-logo;
-}
+
 .site-nav__link--current::after {
   position: absolute;
   bottom: 0;

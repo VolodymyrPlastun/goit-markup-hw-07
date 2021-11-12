@@ -14,8 +14,6 @@
   letter-spacing: 0.02em;
   color: $text-color-main;
   transition: color $transition-duration $timing-function;
-}
-.contacts-nav__link {
   &:hover,
   &:focus {
     color: $text-color-logo;

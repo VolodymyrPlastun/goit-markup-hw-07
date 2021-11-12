@@ -39,10 +39,7 @@
     fill: $text-color-logo;
   }
 }
-// .modal__button-close:focus .modal__icon-close,
-// .modal__button-close:hover .modal__icon-close {
-//   fill: $text-color-logo;
-// }
+
 .modal__icon {
   transition: fill $transition-duration $timing-function;
   fill: #000000;
@@ -76,13 +73,14 @@
 
     color: rgba(117, 117, 117, 0.5);
   }
+  &-padding {
+    padding: 12px 16px;
+  }
+  &:focus {
+    border-color: $text-color-logo;
+  }
 }
-.modal__input-padding {
-  padding: 12px 16px;
-}
-.modal__input:focus {
-  border-color: $text-color-logo;
-}
+
 .modal__input:focus ~ .modal__icon {
   fill: $text-color-logo;
 }
@@ -99,6 +97,13 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+}
+.modal__checkbox-input--visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .modal__checkbox-input:checked + .modal__icon-empty {

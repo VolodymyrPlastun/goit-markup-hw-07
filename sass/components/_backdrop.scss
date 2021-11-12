@@ -10,6 +10,8 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transition: transform $transition-duration $timing-function,
+    opacity $transition-duration $timing-function, visibility $transition-duration $timing-function;
 }
 .backdrop.is-hidden .modal {
   transform: scale(0.5) translate(-50%, -50%);
